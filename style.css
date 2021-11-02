@@ -22,6 +22,7 @@ body {
 .services {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .services_h2 {
@@ -61,7 +62,7 @@ body {
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 580px) {
   .services_p {
     display: none;
   }
@@ -79,20 +80,32 @@ body {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: -2px 2px 2px rgb(114, 106, 106);
+  transition: .7s;
 }
+
 .services_button:hover {
-  width: 155px;
-  height: 45px;
   opacity: .7;
   color: #3f3b3b;
-  box-shadow: -5px 5px 5px rgb(114, 106, 106);
+  transition: .7s;
+ }
+  
+ @media (max-width: 580px) {
+   .services_button{
+     margin-left: auto;
+   }
  }
 
 /*------container2-----------------------*/
 
 .container2 {
  margin-top: 90px; 
+}
+
+.container2_a {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
 }
 
 .container2_ul {
